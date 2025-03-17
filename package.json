@@ -1,5 +1,6 @@
 {
   "name": "surveyapp",
+  "homepage": "https://09-mc.github.io/SurveyApp/",
   "license": "0BSD",
   "version": "1.0.0",
   "main": "index.js",
@@ -8,7 +9,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@expo/metro-runtime": "~4.0.1",
